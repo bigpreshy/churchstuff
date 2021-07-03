@@ -1,1 +1,0 @@
-# SMAN-ID-Generator
