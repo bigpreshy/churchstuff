@@ -9,9 +9,9 @@ function drawBackgroundImage(canvas, ctx) {
 
 // Receive the uploaded file and render
 function handleImage(e) {
-  var reader = new FileReader();
+  let reader = new FileReader();
   reader.onload = function (event) {
-    var img = new Image();
+    let img = new Image();
     img.onload = function () {
       const canvas = document.getElementById("canvas");
       const ctx = canvas.getContext("2d");
@@ -23,8 +23,8 @@ function handleImage(e) {
 }
 
 function download() {
-  var download = document.getElementById("download");
-  var image = document
+  let download = document.getElementById("download");
+  let image = document
     .getElementById("canvas")
     .toDataURL("image/png")
     .replace("image/png", "image/octet-stream");
@@ -32,7 +32,7 @@ function download() {
 }
 
 onload = function () {
-  var imageLoader = document.getElementById("imageLoader");
+  let imageLoader = document.getElementById("imageLoader");
   imageLoader.addEventListener("change", handleImage, false);
 
   drawBackgroundImage(canvas, ctx);
