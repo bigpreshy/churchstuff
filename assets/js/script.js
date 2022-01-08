@@ -15,7 +15,7 @@ function handleImage(e) {
     img.onload = function () {
       const canvas = document.getElementById("canvas");
       const ctx = canvas.getContext("2d");
-      ctx.drawImage(img, 825, 345, 197, 254);
+      ctx.drawImage(img, 819, 320, 228, 286);
     };
     img.src = event.target.result;
   };
